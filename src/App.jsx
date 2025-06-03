@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AbousUsPage";
 import Articles from "./pages/Articles";
 import DefaultLayout from "./layouts/DefaultLayout";
+import ArticleDetailPage from "./pages/ArticleDetailPage";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
           <Route element={<DefaultLayout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
-            <Route path="/articles" element={<Articles />} />
+            <Route path="/articles">
+              <Route index element={<Articles />} />
+              <Route path=":id" element={<ArticleDetailPage />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

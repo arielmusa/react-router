@@ -14,14 +14,14 @@ export default function Articles() {
   return (
     <>
       <div className="container">
-        <h1>articles</h1>
+        <h1>Articles</h1>
         <div className="row g-4">
           {articleList.map((article) => (
             <Article
               key={article.id}
               title={article.title}
-              description={article.content}
               imgUrl={article.image}
+              link={`/articles/${article.id}`}
             />
           ))}
         </div>

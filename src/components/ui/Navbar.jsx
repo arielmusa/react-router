@@ -20,17 +20,17 @@ export default function Navbar() {
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item px-2">
               <NavLink class="nav-link active" aria-current="page" to="/">
                 Home
               </NavLink>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-2">
               <NavLink class="nav-link" to="/about-us">
                 About us
               </NavLink>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-2">
               <NavLink class="nav-link" to="/articles">
                 Articles
               </NavLink>
